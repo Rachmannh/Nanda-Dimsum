@@ -91,7 +91,7 @@
 
     <!-- Hero -->
     <section id="myHero" class="my-hero">
-      <div class="hero-text px-4 py-5 my-5">
+      <div class="container hero-text px-4 py-5 my-5">
         <h1 class="hero-title mt-4">Dimsum Enak, Halal, Sehat</h1>
         <div class="col-lg-6 mx-auto">
           <p class="hero-paragraph mb-4">
@@ -115,17 +115,16 @@
     <!-- Hero End -->
 
     <!-- Why Us -->
-    <section id="whyUs">
-      <div class="container px-4 py-5" id="icon-grid">
+    <section id="whyUs" data-bgcolor="#bcb8ad" data-textcolor="#032f35">
+      <div class="why-us container px-4 py-5" id="icon-grid">
         <h2 class="why-us-title pb-2">Kenapa Harus Memilih Produk Kami ?</h2>
-
         <div
           class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 py-5"
         >
           <div class="why-us-cards col d-flex align-items-start">
             <i class="ai-money flex-shrink-0 me-3"></i>
             <div>
-              <h4>Featured title</h4>
+              <h4 id="whyUsTitle">Featured title</h4>
               <p>
                 Paragraph of text beneath the heading to explain the heading.
               </p>
@@ -134,7 +133,7 @@
           <div class="why-us-cards col d-flex align-items-start">
             <i class="ai-money flex-shrink-0 me-3"></i>
             <div>
-              <h4 class="mb-1">asdasd</h4>
+              <h4 id="whyUsTitle">asdasd</h4>
               <p>
                 Paragraph of text beneath the heading to explain the heading.
               </p>
@@ -201,6 +200,7 @@
 
     <!-- GSAP CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 
     <!-- Akaricons -->
     <script src="https://unpkg.com/akar-icons-fonts"></script>
