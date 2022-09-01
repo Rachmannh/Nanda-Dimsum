@@ -15,11 +15,11 @@ html {
 
 :root {
   --bg-color: #fffffe;
-  --button-color: #ffd803;
+  --button-color: #ff8906;
   --headline-color: #272343;
-  --button-text: #272343;
+  --button-text: #fffffe;
   --paragraph-color: #2d334a;
-  --secondary-color: #e3f6f5;
+  --text-1-color: #fffffe;
   --tertiary-color: #bae8e8;
   --heading-font: "Dosis", sans-serif;
   --paragraph-font: "Bitter", serif;
@@ -35,9 +35,9 @@ body {
 
 /* Navbar */
 
-.logo {
-  width: 60px;
-  height: 60px;
+.navbar-brand-logo {
+  width: 80px;
+  height: 80px;
 }
 
 .nav-link {
@@ -67,6 +67,7 @@ body {
   color: #272343a3 !important;
   font-weight: 700 !important;
   text-transform: uppercase;
+  font-size: 14px !important;
 }
 
 .dropdown-item:hover {
@@ -83,11 +84,11 @@ body {
   display: flex;
   width: auto;
   height: 450px;
-  margin: 80px auto;
+  margin-top: 80px !important;
   background-image: linear-gradient(#272343b7, #272343b7),
     url("/assets/img/hero-img.jpg");
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -100,12 +101,56 @@ body {
 
 .hero-title {
   font-size: 48px;
-  color: var(--secondary-color);
+  color: var(--text-1-color);
   font-weight: 600;
 }
 
 .hero-paragraph {
   font-family: var(--paragraph-font);
   font-size: 18px;
-  color: var(--secondary-color);
+  color: var(--text-1-color);
+}
+
+.btn-primary {
+  padding: 10px 30px 10px 30px !important;
+  background-color: var(--button-color) !important;
+  border-color: var(--button-color) !important;
+  color: var(--button-text) !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+
+.btn-primary:hover {
+  transition: 0.4s;
+  border-color: #c66900 !important;
+  background-color: #c66900 !important;
+}
+
+.btn:active,
+.btn:focus,
+.btn.active,
+.btn:active:focus {
+  background-image: none !important;
+  outline: 0 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/* Hero End */
+
+/* Why Us */
+
+#whyUs {
+  margin: 70px auto;
+}
+
+.why-us-cards i {
+  font-size: 28px;
+}
+
+#whyUs h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #890620;
+  text-align: center;
 }

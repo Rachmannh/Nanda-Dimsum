@@ -27,3 +27,11 @@ gsap.from(".hero-paragraph", {
   ease: "elastic.inOut(1, 5)",
   delay: 2,
 });
+
+gsap.from(".hero-buttons", {
+  duration: 2,
+  opacity: 0,
+  y: "100%",
+  ease: "elastic.inOut(1, 5)",
+  delay: 2,
+});
