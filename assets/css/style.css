@@ -44,7 +44,7 @@ body {
   right: 30px;
   color: #fff;
   background-color: #25d366;
-  border-radius: 100px;
+  border-radius: 25px 30px 5px 25px;
   z-index: 100;
   font-family: var(--heading-font) !important;
   font-size: 17px;
@@ -59,7 +59,7 @@ body {
 }
 
 .ai-whatsapp-fill {
-  font-size: 22px !important;
+  font-size: 20px !important;
   padding-right: 5px;
   padding-left: 5px;
 }
@@ -87,7 +87,7 @@ body {
   }
 
   .ai-whatsapp-fill {
-    font-size: 18px !important;
+    font-size: 22px !important;
     padding: 4px;
   }
 }
