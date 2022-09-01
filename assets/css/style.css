@@ -65,7 +65,7 @@ body {
 
 @media screen and (max-width: 600px) {
   span {
-    display: none;
+    display: none !important;
   }
 
   .float-button {
@@ -75,7 +75,7 @@ body {
     border-radius: 20px 20px 5px 20px !important;
   }
 
-  .ai-whatsapp-fill {
+  .fa-whatsapp {
     font-size: 22px !important;
     padding: 4px;
   }
