@@ -3,4 +3,35 @@
     width: 40px;
     height: 40px;
   }
+  #myHero {
+    display: flex;
+    width: auto;
+    height: 450px;
+    margin: 0 !important;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero-title {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .hero-paragraph {
+    font-size: 13px;
+    color: var(--text-1-color);
+  }
+  .btn-primary {
+    background-color: var(--button-color) !important;
+    border-color: var(--button-color) !important;
+    color: var(--button-text) !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+  }
+
+  .btn-primary:hover {
+    transition: 0.4s;
+    border-color: #c66900 !important;
+    background-color: #c66900 !important;
+  }
 }
