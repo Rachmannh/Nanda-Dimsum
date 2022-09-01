@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* Navbar */
+
+#myHero {
+  background-image: url("/assets/img/hero-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar {
+  width: 100%;
+  height: 90px;
+}
+
+.navbar-expand-lg {
+  background-color: white;
+}
+
+.logo {
+  width: 100px;
+  height: 90px;
+}
