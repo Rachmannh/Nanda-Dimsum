@@ -182,6 +182,16 @@ body {
   stroke-dashoffset: -132px;
 }
 
+button:active,
+button:focus,
+button.active,
+button:active:focus {
+  background-image: none !important;
+  outline: 0 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
 /* Navbar End */
 
 /* My Hero */
@@ -217,10 +227,9 @@ body {
 }
 
 .btn-primary {
-  --bs-btn-padding-y: 0.25rem;
-  --bs-btn-padding-x: 0.5rem;
-  --bs-btn-font-size: 0.75rem;
-  background-color: var(--button-color) !important;
+  padding: 10px 30px 10px 30px !important;
+  background-color: transparent !important;
+  border: 2px solid #ff8906 !important;
   border-color: var(--button-color) !important;
   color: var(--button-text) !important;
   font-size: 18px !important;
@@ -229,24 +238,14 @@ body {
 
 .btn-primary:hover {
   transition: 0.4s;
-  border-color: #c66900 !important;
-  background-color: #c66900 !important;
+  border-color: #ff8906 !important;
+  background-color: #ff8906 !important;
 }
 
 .btn:active,
 .btn:focus,
 .btn.active,
 .btn:active:focus {
-  background-image: none !important;
-  outline: 0 !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
-
-button:active,
-button:focus,
-button.active,
-button:active:focus {
   background-image: none !important;
   outline: 0 !important;
   -webkit-box-shadow: none !important;
@@ -263,7 +262,15 @@ button:active:focus {
 
 #whyUs h2 {
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 700 !important;
   color: #890620;
   text-align: center;
+}
+
+#whyUs h4 {
+  font-weight: 600;
+}
+
+.why-us-desc {
+  font-family: var(--paragraph-font) !important;
 }
