@@ -128,8 +128,7 @@ body {
 #myHero {
   display: flex;
   width: auto;
-  height: 450px;
-  margin-top: 10px !important;
+  height: auto;
   background-image: linear-gradient(#272343b7, #272343b7),
     url("/assets/img/hero-img.jpg");
   background-attachment: fixed;
@@ -139,7 +138,7 @@ body {
 }
 
 .hero-text {
-  text-align: center;
+  text-align: center !important;
   justify-content: center !important;
   align-items: center !important;
 }
@@ -195,16 +194,12 @@ button:active:focus {
 
 /* Why Us */
 
-#whyUs {
-  margin: 70px auto;
-}
-
 .why-us-cards i {
   font-size: 28px;
 }
 
 #whyUs h2 {
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 700;
   color: #890620;
   text-align: center;
