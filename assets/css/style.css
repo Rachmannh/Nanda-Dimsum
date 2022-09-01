@@ -189,7 +189,7 @@ body {
 #myHero {
   display: flex;
   width: auto;
-  height: 500px;
+  height: auto;
   background-image: linear-gradient(#272343b7, #272343b7),
     url("/assets/img/hero-img.jpg");
   background-attachment: fixed;
@@ -217,7 +217,9 @@ body {
 }
 
 .btn-primary {
-  padding: 10px 30px 10px 30px !important;
+  --bs-btn-padding-y: 0.25rem;
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-font-size: 0.75rem;
   background-color: var(--button-color) !important;
   border-color: var(--button-color) !important;
   color: var(--button-text) !important;
