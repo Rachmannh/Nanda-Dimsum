@@ -1,3 +1,7 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -9,30 +13,103 @@ html {
   overflow-x: hidden;
 }
 
+:root {
+  --bg-color: #fffffe;
+  --button-color: #ffd803;
+  --headline-color: #272343;
+  --button-text: #272343;
+  --paragraph-color: #2d334a;
+  --secondary-color: #e3f6f5;
+  --tertiary-color: #bae8e8;
+  --heading-font: "Dosis", sans-serif;
+  --paragraph-font: "Bitter", serif;
+}
+
 body {
   position: relative;
   width: 100%;
   height: auto;
+  font-family: var(--heading-font) !important;
+  background-color: var(--bg-color) !important;
 }
 
 /* Navbar */
-
-#myHero {
-  background-image: url("/assets/img/hero-img.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
 
 .navbar-expand-lg {
   background: transparent !important;
 }
 
 .logo {
-  width: 90px;
+  width: 70px;
+  height: 70px;
+}
+
+.nav-link {
+  margin: 0 10px 0 10px;
+  text-transform: uppercase;
+  font-size: 14px !important;
+  letter-spacing: 0.5px;
+  font-weight: 700 !important;
+  color: #272343a3 !important;
+}
+
+.nav-link:hover {
+  color: #272343 !important;
+  transition: 0.7s;
+}
+
+.active {
+  color: var(--headline-color) !important;
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0;
+}
+
+.dropdown-item {
+  color: #272343a3 !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+}
+
+.dropdown-item:hover {
+  background-color: transparent !important;
+  color: var(--headline-color) !important;
+  transition: 0.7s;
+}
+
+/* Navbar End */
+
+/* My Hero */
+
+#myHero {
+  display: flex;
+  width: auto;
+  height: 450px;
+  margin: 90px auto;
+  background-image: linear-gradient(#272343b7, #272343b7),
+    url("/assets/img/hero-img.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  text-align: center;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.hero-title {
+  font-size: 48px;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.hero-paragraph {
+  font-family: var(--paragraph-font);
+  font-size: 18px;
+  color: var(--secondary-color);
 }
