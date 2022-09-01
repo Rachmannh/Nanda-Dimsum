@@ -76,6 +76,51 @@ body {
   transition: 0.7s;
 }
 
+.navbar-toggler {
+  border: transparent !important;
+}
+
+.trigger {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  border: 2px solid var(--headline-color);
+  border-radius: 10px;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.bars {
+  width: 50px;
+  cursor: pointer;
+}
+
+.bars .line {
+  fill: none;
+  stroke: var(--headline-color);
+  stroke-width: 5;
+  stroke-linecap: square;
+  transition: stroke-dasharray 600ms, stroke-dashoffset 600ms;
+}
+.bars .line.top {
+  stroke-dasharray: 40 172;
+}
+.bars .line.middle {
+  stroke-dasharray: 40 111;
+}
+.bars .line.bottom {
+  stroke-dasharray: 40 172;
+}
+.bars.active .top {
+  stroke-dashoffset: -132px;
+}
+.bars.active .middle {
+  stroke-dashoffset: -71px;
+}
+.bars.active .bottom {
+  stroke-dashoffset: -132px;
+}
+
 /* Navbar End */
 
 /* My Hero */
@@ -130,6 +175,16 @@ body {
 .btn:focus,
 .btn.active,
 .btn:active:focus {
+  background-image: none !important;
+  outline: 0 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+button:active,
+button:focus,
+button.active,
+button:active:focus {
   background-image: none !important;
   outline: 0 !important;
   -webkit-box-shadow: none !important;
