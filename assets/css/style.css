@@ -33,6 +33,67 @@ body {
   background-color: var(--bg-color) !important;
 }
 
+/* Whatsapp Button */
+
+.float-button {
+  text-decoration: none;
+  position: fixed;
+  padding: 10px;
+  padding-right: 15px;
+  bottom: 30px;
+  right: 30px;
+  color: #fff;
+  background-color: #25d366;
+  border-radius: 100px;
+  z-index: 100;
+  font-family: var(--heading-font) !important;
+  font-size: 17px;
+  animation: whatsapp-animation 0.5s ease-in-out;
+  box-shadow: 1px 2px 5px 2px rgba(30, 30, 30, 0.3);
+  transition: all 0.3s ease-out;
+}
+
+.float-button:hover {
+  background-color: #128c7e;
+  color: #fff;
+}
+
+.ai-whatsapp-fill {
+  font-size: 22px !important;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+@keyframes whatsapp-animation {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  span {
+    display: none;
+  }
+
+  .float-button {
+    bottom: 15px;
+    right: 15px;
+    width: 20px;
+    border-radius: 20px 20px 5px 20px;
+  }
+
+  .ai-whatsapp-fill {
+    font-size: 18px !important;
+    padding: 4px;
+  }
+}
+
+/* Whatsapp Button End */
+
 /* Navbar */
 
 .navbar-brand-logo {
@@ -128,7 +189,7 @@ body {
 #myHero {
   display: flex;
   width: auto;
-  height: auto;
+  height: 500px;
   background-image: linear-gradient(#272343b7, #272343b7),
     url("/assets/img/hero-img.jpg");
   background-attachment: fixed;
