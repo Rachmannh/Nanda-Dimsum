@@ -2,7 +2,7 @@ gsap.from(".navbar", {
   duration: 2,
   opacity: 0,
   y: "-100%",
-  ease: "elastic.inOut(1, 5)",
+  ease: "bounce.inOut(1, 5)",
 });
 gsap.from(".my-hero", { duration: 3, opacity: 0, ease: "elastic.inOut(1, 5)" });
 gsap.from(".hero-title", {
