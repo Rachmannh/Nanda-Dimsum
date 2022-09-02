@@ -1,3 +1,4 @@
+/* CSSTidy 1.5.2: Fri, 02 Sep 2022 03:39:52 +0000 */
 @media only screen and (max-width: 600px) {
   .navbar-brand-logo {
     width: 60px;
@@ -8,7 +9,7 @@
     width: auto;
     height: auto;
     background-image: linear-gradient(#272343bc, #272343ec),
-      url("/assets/img/hero-img.jpg");
+      url(/assets/img/hero-img.jpg);
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
@@ -29,7 +30,6 @@
     font-size: 18px !important;
     font-weight: 500 !important;
   }
-
   .btn-primary:hover {
     transition: 0.4s;
     border-color: #c66900 !important;

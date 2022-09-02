@@ -1,30 +1,14 @@
-/* Font */
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500&display=swap");
-
+@import "https://fonts.googleapis.com/css2?family=Dosis:wght@500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500&display=swap";
+/* CSSTidy 1.5.2: Fri, 02 Sep 2022 03:39:11 +0000 */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 html {
-  scroll-behavior: smooth;
   overflow-x: hidden !important;
 }
-
-:root {
-  --bg-color: #fffffe;
-  --button-color: #ff8906;
-  --headline-color: #272343;
-  --button-text: #fffffe;
-  --paragraph-color: #2d334a;
-  --text-1-color: #fffffe;
-  --tertiary-color: #bae8e8;
-  --heading-font: "Dosis", sans-serif;
-  --paragraph-font: "Bitter", serif;
-}
-
 body {
   position: relative;
   width: 100%;
@@ -32,14 +16,10 @@ body {
   font-family: var(--heading-font) !important;
   background-color: var(--bg-color) !important;
 }
-
-/* Whatsapp Button */
-
 .float-button {
   text-decoration: none;
   position: fixed;
   padding: 10px;
-  padding-right: 15px;
   bottom: 30px;
   right: 30px;
   color: #fff;
@@ -52,95 +32,75 @@ body {
   box-shadow: 1px 2px 5px 2px rgba(30, 30, 30, 0.3);
   transition: all 0.3s ease-out;
 }
-
 .float-button:hover {
   background-color: #128c7e;
   color: #fff;
 }
-
 .ai-whatsapp-fill {
   font-size: 20px !important;
   padding-right: 5px;
   padding-left: 5px;
 }
-
 @keyframes whatsapp-animation {
   from {
-    opacity: 0%;
+    opacity: 0;
   }
-
   to {
     opacity: 100%;
   }
 }
-
 @media screen and (max-width: 600) {
   span {
     display: none;
   }
-
   .float-button {
     bottom: 15px;
     right: 15px;
     width: 20px;
     border-radius: 20px 20px 5px 20px !important;
   }
-
   .ai-whatsapp-fill {
     font-size: 22px !important;
     padding: 4px;
   }
 }
-
-/* Whatsapp Button End */
-
-/* Navbar */
-
 .navbar-brand-logo {
   width: 80px;
   height: 80px;
 }
-
 .nav-link {
-  margin: 0 10px 0 10px;
+  margin: 0 10px;
   text-transform: uppercase;
   font-size: 14px !important;
   letter-spacing: 0.5px;
   font-weight: 700 !important;
   color: #272343a3 !important;
 }
-
 .nav-link:hover {
   color: #272343 !important;
   transition: 0.7s;
 }
-
 .active {
   color: var(--headline-color) !important;
 }
-
 .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0;
 }
-
 .dropdown-item {
   color: #272343a3 !important;
   font-weight: 700 !important;
   text-transform: uppercase;
   font-size: 14px !important;
 }
-
 .dropdown-item:hover {
   background-color: transparent !important;
   color: var(--headline-color) !important;
   transition: 0.7s;
 }
-
 .navbar-toggler {
   border: transparent !important;
 }
-
 .trigger {
   position: absolute;
   z-index: 2;
@@ -150,84 +110,47 @@ body {
   border-radius: 10px;
   transform: translateX(-50%) translateY(-50%);
 }
-
 .bars {
   width: 50px;
   cursor: pointer;
 }
-
 .bars .line {
-  fill: none;
-  stroke: var(--headline-color);
-  stroke-width: 5;
-  stroke-linecap: square;
   transition: stroke-dasharray 600ms, stroke-dashoffset 600ms;
 }
-.bars .line.top {
-  stroke-dasharray: 40 172;
-}
-.bars .line.middle {
-  stroke-dasharray: 40 111;
-}
-.bars .line.bottom {
-  stroke-dasharray: 40 172;
-}
-.bars.active .top {
-  stroke-dashoffset: -132px;
-}
-.bars.active .middle {
-  stroke-dashoffset: -71px;
-}
-.bars.active .bottom {
-  stroke-dashoffset: -132px;
-}
-
 button:active,
 button:focus,
 button.active,
 button:active:focus {
   background-image: none !important;
   outline: 0 !important;
-  -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
-
-/* Navbar End */
-
-/* My Hero */
-
 #myHero {
   display: flex;
   width: auto;
   height: auto;
   background-image: linear-gradient(#272343b7, #272343b7),
-    url("/assets/img/hero-img.jpg");
+    url(/assets/img/hero-img.jpg);
   background-attachment: fixed;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .hero-text {
   text-align: center !important;
-  justify-content: center !important;
-  align-items: center !important;
 }
-
 .hero-title {
   font-size: 48px;
   color: var(--text-1-color);
   font-weight: 600;
 }
-
 .hero-paragraph {
   font-family: var(--paragraph-font);
   font-size: 18px;
   color: var(--text-1-color);
 }
-
 .btn-primary {
-  padding: 10px 30px 10px 30px !important;
+  padding: 10px 30px !important;
   background-color: transparent !important;
   border: 2px solid #ff8906 !important;
   border-color: var(--button-color) !important;
@@ -235,42 +158,31 @@ button:active:focus {
   font-size: 18px !important;
   font-weight: 500 !important;
 }
-
 .btn-primary:hover {
   transition: 0.4s;
   border-color: #ff8906 !important;
   background-color: #ff8906 !important;
 }
-
 .btn:active,
 .btn:focus,
 .btn.active,
 .btn:active:focus {
   background-image: none !important;
   outline: 0 !important;
-  -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
-
-/* Hero End */
-
-/* Why Us */
-
 .why-us-cards i {
   font-size: 28px;
 }
-
 #whyUs h2 {
   font-size: 48px;
   font-weight: 700 !important;
   color: #890620;
   text-align: center;
 }
-
 #whyUs h4 {
   font-weight: 600;
 }
-
 .why-us-desc {
   font-family: var(--paragraph-font) !important;
 }
