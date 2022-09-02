@@ -9,7 +9,6 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden !important;
 }
 
 :root {
@@ -29,6 +28,7 @@ body {
   height: auto;
   font-family: var(--main-font) !important;
   background-color: var(--bg-color) !important;
+  overflow-x: hidden !important;
 }
 
 /* Whatsapp Button */
@@ -301,4 +301,33 @@ button:active:focus {
 
 .product-illustration {
   width: 30px;
+}
+
+.product-cards {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.product-cards img {
+  object-fit: cover;
+  clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
+  transition: 1000ms;
+}
+
+.product-cards img:hover {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 50%);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 100px;
+}
+
+.product-cards h5 {
+  color: var(--text-1-color);
+  text-align: center;
+}
+
+.product-cards p {
+  color: var(--text-1-color);
+  text-align: center;
 }
