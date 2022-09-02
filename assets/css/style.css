@@ -299,7 +299,4 @@ button:active:focus {
   font-size: 48px;
   font-weight: 700 !important;
   color: var(--text-1-color);
-  border-left: 4px solid var(--button-color);
-  border-right: 4px solid var(--button-color);
-  text-align: center;
 }

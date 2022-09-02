@@ -31,6 +31,9 @@
     <!-- AOS CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+    <!-- SweetAlert -->
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
     <!-- Bootstrap 5 CSS -->
     <link rel="stylesheet" href="./assets/vendor/bootstrap-5.2.0/css/bootstrap.min.css">
   </head>
@@ -179,7 +182,17 @@
     <!-- Product -->
     <section id="ourProducts">
       <div class="container">
-        <h2 class="product-title pb-2 text-center">Produk Kami</h2>
+        <div class="row justify-content-center align-items-center text-center">
+          <div class="col col-lg-2">
+            <img src="./assets/img/border-img.svg" alt="illustration">
+          </div>
+          <div class="col-lg-auto">
+            <h2 class="product-title">Produk Kami</h2>
+          </div>
+          <div class="col col-lg-2">
+            <img src="./assets/img/border-img.svg" alt="illustration">
+          </div>
+        </div>
         <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
   <div class="col">
     <div class="card">
@@ -231,6 +244,7 @@
 
     <!-- My JS -->
     <script src="./assets/js/gsap.js"></script>
+    <script src="./assets/js/alert.js"></script>
 
     <!-- Jquery -->
     <script
@@ -239,6 +253,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- SweetAlert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Bootstrap 5 JS -->
     <script src="./assets/vendor/bootstrap-5.2.0/js/bootstrap.bundle.min.js"></script>
