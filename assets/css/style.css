@@ -300,3 +300,7 @@ button:active:focus {
   font-weight: 700 !important;
   color: var(--text-1-color);
 }
+
+.product-illustration {
+  width: 70px;
+}

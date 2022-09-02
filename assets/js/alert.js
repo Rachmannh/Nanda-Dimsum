@@ -1,6 +1,6 @@
 function init() {
   var count = 5;
-  var counter = setInterval(timer, 500);
+  var counter = setInterval(timer, 700);
   function timer() {
     count = count - 1;
     if (count == 0) {
