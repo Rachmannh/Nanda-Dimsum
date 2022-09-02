@@ -285,8 +285,6 @@ button:active:focus {
   display: flex;
   width: auto;
   height: auto;
-  align-items: center !important;
-  justify-content: center !important;
   background-image: linear-gradient(#272343b7, #272343b7),
     url("/assets/img/product-bg.jpg");
   background-attachment: fixed;
@@ -296,8 +294,6 @@ button:active:focus {
 }
 
 #ourProducts h2 {
-  align-items: center !important;
-  justify-content: center !important;
   font-size: 48px;
   font-weight: 700 !important;
   color: var(--text-1-color);
