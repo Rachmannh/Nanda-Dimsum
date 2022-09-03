@@ -2,7 +2,8 @@
   .swal2-popup {
     font-size: 10px !important;
     font-family: var(--main-font);
-    line-height: 25px;
+    background-color: var(--bg-color) !important;
+    color: var(--headline-color) !important;
   }
   .navbar-brand-logo {
     width: 60px;

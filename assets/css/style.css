@@ -92,11 +92,11 @@ body {
 /* Whatsapp Button End */
 
 .swal2-popup {
-  width: 800px;
+  width: 800px !important;
   font-size: 14px !important;
   font-family: var(--main-font);
-  background-color: var(--bg-color);
-  color: var(--headline-color);
+  background-color: var(--bg-color) !important;
+  color: var(--headline-color) !important;
 }
 
 /* Navbar */
