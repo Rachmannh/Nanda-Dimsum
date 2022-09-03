@@ -17,7 +17,6 @@ html {
   --button-text: #fffffe;
   --headline-color: #2b2c34;
   --paragraph-color: #2b2c34;
-  --text-1-color: #fffffe;
   --tertiary-color: #e45858;
   --main-font: "Open Sans", sans-serif;
 }
@@ -99,11 +98,32 @@ body {
   color: var(--headline-color) !important;
 }
 
-/* Navbar */
+/* Header */
 
-.navbar-brand-logo {
-  width: 80px;
-  height: 80px;
+#myHeader {
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(#272343b7, #272343b7),
+    url("/assets/img/hero-bg.jpg");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  padding: 40px !important;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 24px !important;
+  color: var(--bg-color) !important;
+}
+
+.change-colors {
+  color: var(--button-color) !important;
 }
 
 .nav-link {
@@ -113,16 +133,16 @@ body {
   font-size: 14px !important;
   letter-spacing: 0.5px;
   font-weight: 700 !important;
-  color: #272343a3 !important;
+  color: var(--bg-color) !important;
 }
 
 .nav-link:hover {
-  color: var(--headline-color) !important;
+  color: var(--button-color) !important;
   transition: 0.7s;
 }
 
 .active {
-  color: var(--headline-color) !important;
+  color: var(--button-color) !important;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -198,40 +218,25 @@ button:active:focus {
   box-shadow: none !important;
 }
 
-/* Navbar End */
-
-/* My Hero */
-
-#myHero {
-  display: flex;
-  width: auto;
-  height: 450px;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(#272343b7, #272343b7),
-    url("/assets/img/hero-bg.jpg");
-  background-attachment: fixed;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .hero-text {
   text-align: center !important;
   justify-content: center !important;
   align-items: center !important;
 }
 
-.hero-title {
-  font-size: 48px;
-  color: var(--text-1-color);
+.hero-heading {
+  width: 600px;
+  line-height: 52px;
+  font-size: 40px;
+  color: var(--bg-color);
   font-weight: 600;
 }
 
-.hero-paragraph {
+.hero-sub-heading {
+  width: 400px;
   font-family: var(--paragraph-font);
   font-size: 18px;
-  color: var(--text-1-color);
+  color: var(--bg-color);
 }
 
 .btn-primary {
@@ -262,7 +267,7 @@ button:active:focus {
   box-shadow: none !important;
 }
 
-/* Hero End */
+/* Header End */
 
 /* Why Us */
 
