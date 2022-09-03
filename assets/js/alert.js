@@ -5,13 +5,9 @@ function init() {
     count = count - 1;
     if (count == 0) {
       Swal.fire({
-        title: "Selamat Datang di Website Nanda Dimsum",
-        confirmButtonText: "Okay",
-      }).then((result) => {
-        /* Read more about isConfirmed, isDenied below */
-        if (result.isConfirmed) {
-          Swal.fire("Jika ada pertanyaan lebih lanjut harap chat admin");
-        }
+        title:
+          "Mohon maaf atas ketidaknyamannya, saat ini website sedang dalam masa pengembangan.",
+        confirmButtonText: "Baiklah",
       });
       return;
     }
