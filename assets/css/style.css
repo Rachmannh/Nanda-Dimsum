@@ -92,7 +92,9 @@ body {
 /* Whatsapp Button End */
 
 .swal2-popup {
-  font-size: 14px !important;
+  font-size: 16px !important;
+  font-family: var(--main-font);
+  line-height: 25px;
 }
 
 /* Navbar */
