@@ -1,6 +1,8 @@
 @media only screen and (max-width: 600px) {
   body {
     overflow-x: hidden !important;
+    width: 100%;
+    height: auto;
   }
   .swal2-popup {
     width: 300px !important;
