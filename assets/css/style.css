@@ -16,7 +16,6 @@ html {
   --button-color: #6246ea;
   --button-text: #fffffe;
   --headline-color: #2b2c34;
-  --paragraph-color: #2b2c34;
   --tertiary-color: #e45858;
   --main-font: "Open Sans", sans-serif;
 }
@@ -102,8 +101,6 @@ body {
 
 #myHeader {
   width: auto;
-  align-items: center;
-  justify-content: center;
   background-image: linear-gradient(#272343b7, #272343b7),
     url("/assets/img/hero-bg.jpg");
   background-attachment: fixed;
@@ -278,7 +275,7 @@ button:active:focus {
 #whyUs h2 {
   font-size: 48px;
   font-weight: 700 !important;
-  color: #890620;
+  color: var(--headline-color);
   text-align: center;
 }
 
@@ -309,7 +306,7 @@ button:active:focus {
 #ourProducts h2 {
   font-size: 48px;
   font-weight: 700 !important;
-  color: var(--text-1-color);
+  color: var(--bg-color);
 }
 
 .product-illustration {
