@@ -109,7 +109,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 90;
 }
 
 img {
@@ -279,13 +278,21 @@ button:active:focus {
 
 /* Why Us */
 
+#whyUs {
+  width: auto;
+  background-image: url("/assets/img/why-us-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .why-us-cards i {
   font-size: 30px;
 }
 
-#whyUs h2 {
-  font-size: 48px;
-  font-weight: 700 !important;
+#whyUs h1 {
+  font-size: 34px;
+  font-weight: 600 !important;
   color: var(--headline-color);
   text-align: center;
 }
