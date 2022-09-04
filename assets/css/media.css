@@ -40,6 +40,13 @@
     border-color: #6246ea !important;
     background-color: #6246ea !important;
   }
+  #whyUs {
+    width: auto;
+    background-image: url("/assets/img/why-us-bg-phone.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   #whyUs h2 {
     font-size: 34px;
     font-weight: 700;
