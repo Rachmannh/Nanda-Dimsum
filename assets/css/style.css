@@ -439,7 +439,7 @@ button:active:focus {
 /* Footer */
 
 #myFooter {
-  background-image: url(/assets/img/hero-bg.png);
+  background-image: url(/assets/img/footer-bg.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
