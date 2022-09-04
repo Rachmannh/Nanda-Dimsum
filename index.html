@@ -248,12 +248,41 @@
     </section>
     <!-- Product End -->
 
+    <!-- Maps -->
+    <section id="myMaps">
+      <div class="container col-xxl-8 py-5 text-center">
+        <h1 class="location-heading mb-3">Lokasi Kami</h1>
+        <div class="row row flex-lg-row-reverse justify-content-center align-items-center g-3">
+          <div class="col-sm-8 col-lg-6">
+            <div class="p-3">
+              <img src="./assets/img/location-img.png" width="400" class="location-images img-fluid" alt="Ilustrasi" loading="lazy">
+            </div>
+          </div>
+          <div class="col-sm-8 col-lg-6">
+            <div class="p-3">
+              <iframe class="my-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.0717705474635!2d106.7760683143102!3d-6.2200646626515645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f12cea770ec5%3A0x241f9b7c03e81f6d!2sJl.%20Raya%20Kby.%20Lama%20No.7B%2C%20RT.7%2FRW.2%2C%20Sukabumi%20Sel.%2C%20Kec.%20Kb.%20Jeruk%2C%20Kota%20Jakarta%20Barat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2011560!5e1!3m2!1sen!2sid!4v1662316100669!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial End -->
+
     <!-- Footer -->
-    <div class="container">
-      <footer class="mt-3">
-        <p class="text-center text-muted">&copy; 2022 Nanda Dimsum. All Copyright Reserved</p>
-      </footer>
-    </div>
+    <section id="myFooter">
+      <div class="container">
+        <footer class="py-3">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="" class="nav-link active px-2">Beranda</a></li>
+            <li class="nav-item"><a href="" class="nav-link px-2">Tentang</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2">Layanan</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2">Kontak</a></li>
+            
+          </ul>
+          <p class="footer-text text-center">&copy; 2022 Nanda Dimsum. All Right Reserved</p>
+        </footer>
+      </div>
+    </section>
     <!-- Footer End -->
 
     <!-- Hotjar Tracking Code for https://nanda-dimsum.netlify.app/ -->
@@ -288,6 +317,7 @@
     <script src="./assets/js/gsap.js"></script>
     <script src="./assets/js/alert.js"></script>
     <script type="text/javascript" src="./assets/js/card-tilt.js"></script>
+    <script src="./assets/js/dropdown.js"></script>
 
     <!-- Jquery -->
     <script
@@ -296,6 +326,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 
     <!-- SweetAlert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

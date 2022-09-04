@@ -279,14 +279,6 @@ button:active:focus {
 
 /* Why Us */
 
-#whyUs {
-  width: auto;
-  background-image: url("/assets/img/why-us-bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .why-us-icon-cards {
   border: transparent !important;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
@@ -327,15 +319,14 @@ button:active:focus {
 
 #my-products {
   background-image: url("/assets/img/hero-bg.png");
-  background-attachment: fixed;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #my-products h2 {
   font-size: 44px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--bg-color);
 }
 
@@ -429,6 +420,34 @@ button:active:focus {
 
 /* Products End */
 
+/* Maps */
+
+#myMaps h1 {
+  font-size: 44px;
+  font-weight: 700 !important;
+  color: var(--headline-color);
+}
+
+.my-maps {
+  border-radius: 20px !important;
+  min-width: 100% !important;
+  height: 350px;
+}
+
+/* Maps End */
+
 /* Footer */
+
+#myFooter {
+  background-image: url(/assets/img/hero-bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-text {
+  font-family: var(--font-2);
+  color: var(--bg-color);
+}
 
 /* Footer End */
