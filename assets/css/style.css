@@ -295,7 +295,7 @@ button:active:focus {
 }
 
 .why-us-desc {
-  font-family: var(--paragraph-font) !important;
+  font-family: var(--font-2) !important;
 }
 
 /* Why Us End */
