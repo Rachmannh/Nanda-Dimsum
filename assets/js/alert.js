@@ -5,9 +5,8 @@ function init() {
     count = count - 1;
     if (count == 0) {
       Swal.fire({
-        title:
-          "Mohon maaf atas ketidaknyamanan nya, saat ini website sedang dalam masa pengembangan.",
-        confirmButtonText: "Baiklah",
+        title: "Selamat datang di website Nanda Dimsum",
+        confirmButtonText: "Okay",
       });
       return;
     }
