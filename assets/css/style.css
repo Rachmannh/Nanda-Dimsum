@@ -150,7 +150,7 @@ nav {
 }
 
 .dropdown-item {
-  color: #272343a3 !important;
+  color: var(--headline-color) !important;
   font-weight: 700 !important;
   text-transform: uppercase;
   font-size: 14px !important;
@@ -158,7 +158,7 @@ nav {
 
 .dropdown-item:hover {
   background-color: transparent !important;
-  color: var(--headline-color) !important;
+  color: var(--button-color) !important;
   transition: 0.7s;
 }
 
