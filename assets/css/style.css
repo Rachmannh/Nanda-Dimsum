@@ -291,10 +291,10 @@ button:active:focus {
 }
 
 #whyUs h1 {
-  font-size: 34px;
-  font-weight: 600 !important;
+  line-height: 52px;
+  font-size: 44px;
   color: var(--headline-color);
-  text-align: center;
+  font-weight: 600;
 }
 
 #whyUs h4 {
