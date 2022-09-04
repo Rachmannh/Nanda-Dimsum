@@ -42,7 +42,7 @@
   }
   #my-products h6 {
     visibility: visible !important;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: var(--bg-color);
   }
