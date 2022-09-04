@@ -93,7 +93,7 @@ body {
 /* Whatsapp Button End */
 
 .swal2-popup {
-  width: 800px !important;
+  width: auto !important;
   font-size: 22px !important;
   font-family: var(--font-1);
   background-color: var(--bg-color) !important;
