@@ -325,7 +325,7 @@ button:active:focus {
 
 /* Our Products */
 
-#my-keyboards {
+#my-products {
   background-image: url("/assets/img/hero-bg.png");
   background-attachment: fixed;
   background-position: top;
@@ -333,8 +333,16 @@ button:active:focus {
   background-size: cover;
 }
 
-#my-keyboards h2 {
+#my-products h2 {
   font-size: 44px;
+  font-weight: 600;
+  color: var(--bg-color);
+}
+
+#my-products h6 {
+  visibility: hidden;
+  font-size: 24px;
+  font-weight: 600;
   color: var(--bg-color);
 }
 

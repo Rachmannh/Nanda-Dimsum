@@ -48,4 +48,10 @@
     justify-content: center;
     align-items: center;
   }
+  #my-products h6 {
+    visibility: visible;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--bg-color);
+  }
 }
