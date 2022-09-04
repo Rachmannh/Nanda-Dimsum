@@ -20,9 +20,6 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .hero img {
-    width: 400px !important;
-  }
   .hero-heading {
     width: auto;
     line-height: 35px;

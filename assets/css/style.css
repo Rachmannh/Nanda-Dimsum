@@ -184,7 +184,7 @@ nav {
 
 .bars .line {
   fill: none;
-  stroke: var(--headline-color);
+  stroke: var(--bg-color);
   stroke-width: 5;
   stroke-linecap: square;
   transition: stroke-dasharray 600ms, stroke-dashoffset 600ms;
@@ -224,12 +224,6 @@ button:active:focus {
   align-items: center !important;
 }
 
-.hero-images {
-  width: 550px;
-  height: auto;
-  z-index: 99;
-}
-
 .hero-heading {
   width: 500px;
   line-height: 52px;
@@ -241,7 +235,7 @@ button:active:focus {
 .hero-sub-heading {
   width: 400px;
   font-family: var(--font-2);
-  font-size: 18px;
+  font-size: 16px;
   color: var(--bg-color);
 }
 
