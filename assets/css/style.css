@@ -286,8 +286,23 @@ button:active:focus {
   background-size: cover;
 }
 
-.why-us-cards i {
-  font-size: 30px;
+.why-us-icon-cards {
+  border: transparent !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.why-us-icon-cards:hover {
+  transition: 0.7s;
+  transform: scale(1.1);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.why-us-card-text {
+  font-family: var(--font-2);
+  font-size: 15px;
+  font-weight: 500;
 }
 
 #whyUs h1 {
