@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  user-select: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #fffffe;
+  --button-color: #6246ea;
+  --button-text: #fffffe;
+  --headline-color: #2b2c34;
+  --tertiary-color: #e45858;
+  --font-1: "Dosis", sans-serif;
+  --font-2: "Bitter", serif;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+body {
+  width: auto;
+  height: 90vh;
+  background-color: var(--bg-color) !important;
+  font-family: var(--font-1) !important;
+}
+
+.btn-link {
+  text-decoration: none !important;
+  background-color: var(--tertiary-color) !important;
+  border-radius: 60px !important;
+  color: var(--bg-color) !important;
+}
+
+.btn-link:hover {
+  transition: 0.7s;
+  background-color: var(--button-color) !important;
+}
