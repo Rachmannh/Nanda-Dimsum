@@ -10,15 +10,6 @@
     font-weight: 600;
     font-size: 22px !important;
   }
-  #myHero {
-    width: auto;
-    height: auto;
-    background-image: url("/assets/img/hero-bg.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   .hero-heading {
     width: auto;
     line-height: 40px;
