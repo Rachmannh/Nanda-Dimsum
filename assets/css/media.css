@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
   .swal2-popup {
-    width: 500px !important;
+    width: 300px !important;
     font-size: 12px !important;
   }
   nav {
