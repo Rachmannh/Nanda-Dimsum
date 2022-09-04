@@ -112,6 +112,14 @@ body {
   z-index: 90;
 }
 
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
 nav {
   padding: 40px !important;
 }
