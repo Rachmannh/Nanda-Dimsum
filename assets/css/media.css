@@ -13,22 +13,22 @@
   #myHero {
     width: auto;
     height: auto;
-    background-image: linear-gradient(#272343bc, #272343ec),
-      url("/assets/img/hero-bg.jpg");
+    background-image: url("/assets/img/hero-bg.png");
     background-attachment: fixed;
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .hero-heading {
     width: auto;
-    line-height: 35px;
-    font-size: 24px;
+    line-height: 40px;
+    font-size: 32px;
   }
   .hero-sub-heading {
     width: auto;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
   }
   .btn-primary {
     font-size: 18px !important;
