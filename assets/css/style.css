@@ -331,7 +331,7 @@ button:active:focus {
 }
 
 #my-products h6 {
-  visibility: hidden;
+  visibility: hidden !important;
   font-size: 24px;
   font-weight: 600;
   color: var(--bg-color);

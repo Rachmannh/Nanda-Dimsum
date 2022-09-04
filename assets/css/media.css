@@ -25,7 +25,6 @@
     font-size: 18px !important;
     font-weight: 500 !important;
   }
-
   .btn-primary:hover {
     transition: 0.4s;
     border-color: #6246ea !important;
@@ -40,6 +39,12 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+  }
+  #my-products h6 {
+    visibility: visible !important;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--bg-color);
   }
   .my-maps {
     border-radius: 20px !important;
