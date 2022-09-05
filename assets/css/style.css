@@ -72,21 +72,19 @@ body {
   }
 }
 
-@media screen and (max-width: 545px) {
+@media screen and (max-width: 600px) {
   span {
-    display: none;
+    display: none !important;
   }
 
   .float-button {
     bottom: 15px;
-    right: 15px;
-    width: 20px;
+    width: 50px;
     border-radius: 20px 20px 5px 20px;
   }
 
   .ai-whatsapp-fill {
     font-size: 22px !important;
-    padding: 4px;
   }
 }
 
