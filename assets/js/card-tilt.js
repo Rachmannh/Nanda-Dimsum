@@ -591,6 +591,6 @@ var VanillaTilt = (function () {
 })();
 
 VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
-  max: 25,
+  max: 10,
   speed: 1000,
 });
