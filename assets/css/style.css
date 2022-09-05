@@ -263,6 +263,47 @@ button:active:focus {
 
 /* Header End */
 
+/* Marquee */
+
+.marquee {
+  width: 100%;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 90px;
+  background: var(--headline-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+
+.marquee .text {
+  display: inline-block;
+  margin: 0;
+  padding-left: 4.4rem;
+  text-indent: 0;
+  animation: marquee 7s linear infinite;
+  font-family: var(--font-1) !important;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 125%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bg-color);
+}
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+/* Marquee End */
+
 /* Why Us */
 
 .why-us-icon-cards {
@@ -425,10 +466,15 @@ button:active:focus {
 /* Footer */
 
 #myFooter {
+  width: 100%;
   background-image: url(/assets/img/footer-bg.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.footers {
+  display: flex;
 }
 
 .footer-text {

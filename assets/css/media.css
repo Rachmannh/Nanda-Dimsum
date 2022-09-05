@@ -62,4 +62,31 @@
     font-family: var(--font-2);
     color: var(--bg-color);
   }
+  .marquee {
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 40px;
+    background: var(--headline-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+  }
+
+  .marquee .text {
+    display: inline-block;
+    margin: 0;
+    padding-left: 1.4rem;
+    text-indent: 0;
+    animation: marquee 5s linear infinite;
+    font-family: var(--font-1) !important;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 125%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--bg-color);
+  }
 }
