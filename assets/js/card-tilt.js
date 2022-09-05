@@ -590,7 +590,7 @@ var VanillaTilt = (function () {
   return VanillaTilt;
 })();
 
-VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+VanillaTilt.init(document.querySelectorAll(".product-box"), {
   max: 10,
-  speed: 1000,
+  speed: 7000,
 });
