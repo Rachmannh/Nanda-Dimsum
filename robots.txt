@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /super-important-page.html
+
+Sitemap: https://nanda-dimsum.netlify.app/sitemap.xml
