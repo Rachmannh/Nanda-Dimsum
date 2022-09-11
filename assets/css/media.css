@@ -80,7 +80,7 @@
     margin: 0;
     padding-left: 1.4rem;
     text-indent: 0;
-    animation: marquee 5s linear infinite;
+    animation: marquee 10s linear infinite;
     font-family: var(--font-1) !important;
     font-weight: 600;
     font-size: 1rem;
