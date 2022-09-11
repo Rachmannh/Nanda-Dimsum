@@ -159,18 +159,8 @@ nav {
   border: transparent !important;
 }
 
-.trigger {
-  position: absolute;
-  z-index: 2;
-  left: 50%;
-  top: 50%;
-  border: 2px solid var(--headline-color);
-  border-radius: 10px;
-  transform: translateX(-50%) translateY(-50%);
-}
-
 .bars {
-  width: 50px;
+  width: 52px;
   cursor: pointer;
 }
 
@@ -178,8 +168,8 @@ nav {
   fill: none;
   stroke: var(--bg-color);
   stroke-width: 5;
-  stroke-linecap: square;
-  transition: stroke-dasharray 600ms, stroke-dashoffset 600ms;
+  stroke-linecap: butt;
+  transition: stroke-dasharray 1000ms, stroke-dashoffset 1000ms;
 }
 .bars .line.top {
   stroke-dasharray: 40 172;
@@ -191,10 +181,10 @@ nav {
   stroke-dasharray: 40 172;
 }
 .bars.active .top {
-  stroke-dashoffset: -132px;
+  stroke-dashoffset: -170px;
 }
 .bars.active .middle {
-  stroke-dashoffset: -71px;
+  stroke-dashoffset: 230px;
 }
 .bars.active .bottom {
   stroke-dashoffset: -132px;
