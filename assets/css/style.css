@@ -1,6 +1,6 @@
 /* Font */
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
 
 * {
   padding: 0;
@@ -14,19 +14,17 @@ html {
 }
 
 :root {
-  --bg-color: #fffffe;
-  --button-color: #6246ea;
-  --button-text: #fffffe;
-  --headline-color: #2b2c34;
-  --tertiary-color: #e45858;
-  --font-1: "Dosis", sans-serif;
-  --font-2: "Bitter", serif;
+  --main-color: #fcfcfc;
+  --second-color: #fe9801;
+  --third-color: #171717;
+  --main-font: "Lato", sans-serif;
+  --second-font: "Merienda", cursive;
 }
 
 body {
   position: relative;
-  font-family: var(--font-1) !important;
-  background-color: var(--bg-color) !important;
+  font-family: var(--main-font) !important;
+  background-color: var(--main-color) !important;
   overflow-x: hidden !important;
 }
 
@@ -101,7 +99,6 @@ img {
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
-  user-drag: none;
 }
 
 nav {
@@ -111,11 +108,7 @@ nav {
 .navbar-brand {
   font-weight: 600;
   font-size: 24px !important;
-  color: var(--bg-color) !important;
-}
-
-.change-colors {
-  color: var(--button-color) !important;
+  color: var(--main-color) !important;
 }
 
 .nav-link {
@@ -125,16 +118,16 @@ nav {
   font-size: 14px !important;
   letter-spacing: 0.5px;
   font-weight: 700 !important;
-  color: var(--bg-color) !important;
+  color: var(--main-color) !important;
 }
 
 .nav-link:hover {
-  color: var(--button-color) !important;
+  color: var(--second-color) !important;
   transition: 0.7s;
 }
 
 .active {
-  color: var(--button-color) !important;
+  color: var(--second-color) !important;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -151,7 +144,7 @@ nav {
 
 .dropdown-item:hover {
   background-color: transparent !important;
-  color: var(--button-color) !important;
+  color: var(--main-color) !important;
   transition: 0.7s;
 }
 
@@ -166,7 +159,7 @@ nav {
 
 .bars .line {
   fill: none;
-  stroke: var(--bg-color);
+  stroke: var(--main-color);
   stroke-width: 5;
   stroke-linecap: butt;
   transition: stroke-dasharray 1000ms, stroke-dashoffset 1000ms;
@@ -207,28 +200,33 @@ button:active:focus {
 }
 
 .hero-heading {
-  width: 500px;
-  line-height: 52px;
-  font-size: 48px;
-  color: var(--bg-color);
+  width: 600px;
+  line-height: 62px;
+  font-size: 44px;
+  color: var(--main-color);
   font-weight: 700;
+  font-family: var(--second-font);
 }
 
 .hero-sub-heading {
-  width: 400px;
+  width: 450px;
   font-family: var(--font-2);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
-  color: var(--bg-color);
+  color: var(--main-color);
+}
+
+.changes {
+  color: var(--second-color);
 }
 
 .btn-primary {
   align-items: center;
   text-align: center;
-  background-color: transparent !important;
-  border: 3px solid var(--button-color) !important;
-  border-color: var(--button-color) !important;
-  color: var(--button-text) !important;
+  background-color: var(--second-color) !important;
+  border: 3px solid var(--second-color) !important;
+  border-color: var(--second-color) !important;
+  color: var(--main-color) !important;
   font-size: 22px !important;
   border-radius: 30px !important;
   font-weight: 500 !important;
@@ -260,7 +258,7 @@ button:active:focus {
   white-space: nowrap;
   overflow: hidden;
   height: 90px;
-  background: var(--headline-color);
+  background: var(--third-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,13 +271,13 @@ button:active:focus {
   padding-left: 4.4rem;
   text-indent: 0;
   animation: marquee 13s linear infinite;
-  font-family: var(--font-1) !important;
+  font-family: var(--main-font) !important;
   font-weight: 600;
   font-size: 2.5rem;
   line-height: 125%;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--bg-color);
+  color: var(--main-color);
 }
 @keyframes marquee {
   0% {
@@ -317,6 +315,7 @@ button:active:focus {
 #whyUs h1 {
   line-height: 52px;
   font-size: 44px;
+  font-family: var(--second-font) !important;
   color: var(--headline-color);
   font-weight: 700;
 }
@@ -343,14 +342,15 @@ button:active:focus {
 #my-products h2 {
   font-size: 44px;
   font-weight: 700;
-  color: var(--bg-color);
+  color: var(--second-color);
+  font-family: var(--second-font);
 }
 
 #my-products h6 {
   visibility: hidden !important;
   font-size: 24px;
   font-weight: 600;
-  color: var(--bg-color);
+  color: var(--second-color);
 }
 
 /* My Keyboard Section */
@@ -365,7 +365,7 @@ button:active:focus {
 .product-box::before {
   content: "VARIAN";
   position: absolute;
-  color: var(--button-color);
+  color: var(--second-color);
   font-size: 6em;
   font-weight: bold;
   font-style: italic;
@@ -383,7 +383,7 @@ button:active:focus {
 .product-box::after {
   content: "RASA";
   position: absolute;
-  color: var(--button-color);
+  color: var(--second-color);
   font-size: 4.3em;
   font-weight: bold;
   font-style: italic;
@@ -402,7 +402,8 @@ button:active:focus {
   position: absolute;
   top: 0;
   width: 100%;
-  color: var(--button-color);
+  color: var(--second-color);
+  font-family: var(--second-font);
   text-align: center;
   font-size: 2em;
   opacity: 0;
@@ -439,9 +440,10 @@ button:active:focus {
 /* Maps */
 
 #myMaps h1 {
+  font-family: var(--second-font);
   font-size: 44px;
   font-weight: 700 !important;
-  color: var(--headline-color);
+  color: var(--third-color);
 }
 
 .my-maps {
@@ -467,8 +469,7 @@ button:active:focus {
 }
 
 .footer-text {
-  font-family: var(--font-2);
-  color: var(--bg-color);
+  color: var(--second-color);
 }
 
 /* Footer End */
@@ -489,15 +490,6 @@ button:active:focus {
 .under-construction-section h1 {
   text-align: center;
   font-size: 2em;
-  font-family: var(--font-1);
+  font-family: var(--main-font);
   font-weight: 700;
-}
-
-.btn-primary {
-  background-color: var(--button-color) !important;
-  border: 3px solid var(--button-color) !important;
-  color: var(--bg-color) !important;
-  font-size: 18px !important;
-  border-radius: 30px !important;
-  font-weight: 600 !important;
 }
