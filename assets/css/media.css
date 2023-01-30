@@ -51,7 +51,7 @@
     height: 250px !important;
   }
   #myFooter {
-    background-image: url(/assets/img/footer-bg.png);
+    background-image: url("/assets/img/footer-bg.webp");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;

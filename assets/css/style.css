@@ -87,7 +87,7 @@ body {
 
 #myHeader {
   width: auto;
-  background-image: url("/assets/img/hero-bg.png");
+  background-image: url("/assets/img/hero-bg.webp");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -333,7 +333,7 @@ button:active:focus {
 /* Our Products */
 
 #my-products {
-  background-image: url("/assets/img/hero-bg.png");
+  background-image: url("/assets/img/hero-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -458,7 +458,7 @@ button:active:focus {
 
 #myFooter {
   width: 100%;
-  background-image: url(/assets/img/footer-bg.png);
+  background-image: url("/assets/img/footer-bg.webp");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
