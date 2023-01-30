@@ -55,12 +55,12 @@
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
   }
   .footer-text {
     text-align: center;
     font-family: var(--font-2);
-    color: var(--bg-color);
+    color: #fe9801;
   }
   .marquee {
     width: 100%;
